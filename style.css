@@ -1,0 +1,242 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  width: 100%;
+}
+/*****************  ****************/
+  #train {
+    position: relative;
+    max-width: 80px;
+    margin-top: 170px;
+  }
+  /*.group-button{
+      position: absolute;
+      z-index: 100000;
+  }
+  .group-button button{
+      padding: 1em .5em;
+      border-radius: 10px;
+  }
+  .group-button button:focus{
+      outline: none;
+  }*/
+
+  .land{
+    margin: 0px;
+    width: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 230px;
+    background: #32CD32	;
+    z-index: 0;
+  }
+  .sky {
+    margin: 0px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 300px;
+    background: #E0FFFF	;
+  }
+#cloud-1{
+
+}
+#cloud-2{
+
+}
+
+#flower {
+  position: absolute;
+  top: 280px;
+  left: 10px;
+  max-height: 100px;
+  max-width: 500px;
+  opacity: 0%;
+}
+#flower{
+  opacity: 100%;
+  animation: flower 6000ms;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes flower {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+}
+#flower-2 {
+  position: absolute;
+  top: 250px;
+  left: 370px;
+  max-height: 100px;
+  max-width: 500px;
+  opacity: 0%;
+}
+#flower-2{
+  animation-delay: 3000ms;
+  opacity: 100%;
+  animation: flower-2 9000ms;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes flower-2 {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+#cloud-2 {
+    width: 150px;
+    height: 60px;
+    top: 200px;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+}
+#cloud-2 {
+    animation-name: cloud-2;
+    animation-timing-function: linear;
+}
+@keyframes cloud-2 {
+    0%   { transform: translateX(0); }
+    50%  { transform: translateX(900px); }
+    100% { transform: translateX(0); }
+}
+#cloud-3 {
+    width: 150px;
+    height: 60px;
+    top: 200px;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+#cloud-3 {
+    animation-name: cloud-3;
+    animation-timing-function: linear;
+}
+@keyframes cloud-3 {
+    0%   { transform: translateX(0); }
+    50%  { transform: translateX(400px); }
+    100% { transform: translateX(0); }
+}
+#plane{
+  max-width: 70px;
+  position: absolute;
+  top: 80px;
+  left: 520px;
+  z-index: 0;
+  animation: plane 6000ms infinite ease;
+}
+@keyframes plane {
+    from {
+        transform: rotate(0deg) translateY(-10px) rotate(0deg);
+    }
+    to {
+        transform: rotate(200deg) translate(-180px) rotate(-180deg);
+    }
+    0%   { opacity: 0; }
+}
+
+.explosion img {
+    position: absolute;
+    display: block;
+    width: 100px;
+}
+.explosion img {
+  top: 50px;
+  left: 160px;
+}
+@keyframes explosion {
+    0%, 100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+.explosion {
+    left: 40%;
+    position: relative;
+    opacity: 0;
+}
+.exp {
+    animation: explosion 4s ease 4s forwards;
+    animation-duration: 3s;
+}
+
+#cow{
+  max-width: 160px;
+}
+#cow {
+  margin-left: 700px;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  height: 200px;
+  transform-origin: bottom;
+  width: 200px;
+}
+#cow {
+    animation-name: cow;
+    animation-timing-function: linear;
+}
+@keyframes cow {
+    0%   { transform: translateX(0); }
+    50%  { transform: translateX(-250px); }
+    100% { transform: translateX(0); }
+}
+#dog{
+  max-width: 100px;
+}
+#dog {
+  margin-top: -210px;
+  margin-left: 900px;
+  animation-duration: 12s;
+  animation-iteration-count: infinite;
+  height: 200px;
+  transform-origin: bottom;
+  width: 200px;
+}
+#dog {
+    animation-name: dog;
+    animation-timing-function: linear;
+}
+@keyframes dog {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-150px); }
+    100% { transform: translateY(0); }
+}
+#pawprint-1 {
+  max-width: 10px;
+}
+.paw1 {
+  margin-top: -100px;
+  margin-left: 980px;
+}
+.paw2 {
+  margin-top: 0px;
+  margin-left: 920px;
+}
+#pawprint-1{
+  animation-delay: 3000ms;
+  opacity: 100%;
+  animation: pawprint-1 7000ms;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes pawprint-1 {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+}
+#pawprint-2 {
+  max-width: 10px;
+}
+#pawprint-2{
+  animation-delay: 3000ms;
+  opacity: 100%;
+  animation: pawprint-2 6000ms;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes pawprint-2 {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+}
+/***************** FOOTER ****************/
